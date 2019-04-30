@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="NpSHtA" name="SoundTouchExample" projectType="guiapp" jucerVersion="5.4.3">
+  <MAINGROUP id="nbyWZf" name="SoundTouchExample">
+    <GROUP id="{F216F2AF-C169-2A47-B3C1-35F131F1904D}" name="Source">
+      <GROUP id="{DF3C80BD-55A6-CE9A-4FD5-4250E70CE04B}" name="SoundTouch">
+        <FILE id="dsZTJu" name="AAFilter.cpp" compile="1" resource="0" file="Source/SoundTouch/AAFilter.cpp"/>
+        <FILE id="bUfWQf" name="BPMDetect.cpp" compile="1" resource="0" file="Source/SoundTouch/BPMDetect.cpp"/>
+        <FILE id="CK1Eag" name="cpu_detect_x86.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/cpu_detect_x86.cpp"/>
+        <FILE id="IzcUzz" name="FIFOSampleBuffer.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/FIFOSampleBuffer.cpp"/>
+        <FILE id="t4U6re" name="FIRFilter.cpp" compile="1" resource="0" file="Source/SoundTouch/FIRFilter.cpp"/>
+        <FILE id="YJCDlj" name="InterpolateCubic.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/InterpolateCubic.cpp"/>
+        <FILE id="T2AQJI" name="InterpolateLinear.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/InterpolateLinear.cpp"/>
+        <FILE id="ZpKoZN" name="InterpolateShannon.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/InterpolateShannon.cpp"/>
+        <FILE id="VWWD7z" name="mmx_optimized.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/mmx_optimized.cpp"/>
+        <FILE id="CVkGTv" name="PeakFinder.cpp" compile="1" resource="0" file="Source/SoundTouch/PeakFinder.cpp"/>
+        <FILE id="g4kN4E" name="RateTransposer.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/RateTransposer.cpp"/>
+        <FILE id="pwq4wi" name="SoundTouch.cpp" compile="1" resource="0" file="Source/SoundTouch/SoundTouch.cpp"/>
+        <FILE id="fcM3B3" name="sse_optimized.cpp" compile="1" resource="0"
+              file="Source/SoundTouch/sse_optimized.cpp"/>
+        <FILE id="htKxoE" name="TDStretch.cpp" compile="1" resource="0" file="Source/SoundTouch/TDStretch.cpp"/>
+      </GROUP>
+      <FILE id="EnCImO" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="AoKgU1" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="ezMrPd" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" headerPath="Source/SoundTouch"/>
+        <CONFIGURATION isDebug="0" name="Release" headerPath="Source/SoundTouch"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../gitrepos/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" headerPath="Source/SoundTouch"/>
+        <CONFIGURATION isDebug="0" name="Release" headerPath="Source/SoundTouch"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../gitrepos/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../gitrepos/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+</JUCERPROJECT>
